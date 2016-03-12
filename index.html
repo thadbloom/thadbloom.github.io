@@ -1,29 +1,13 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="robots" content="noindex, nofollow"/>
-	<title>WTF?</title>
-	<style>
-	* { margin: 0; padding: 0; }
-	body { background: url(AnimatedMainBackground.gif) repeat;}
-	.whaaat { width: 50%; margin: 5em auto; }
-	.whaaat img { width: 100%; height: auto; }
-	</style>
-</head>
-<body>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-	<div class="whaaat"><img src="react.gif" /></div>
-</body>
-</html>	
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
