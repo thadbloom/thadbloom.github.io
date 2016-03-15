@@ -3,14 +3,19 @@ layout: default
 title: thad.wtf
 ---
 
-<section class="content" id="home">
+<section class="content home" id="home">
 	<div class="wrap">
 		<h1>Blog Posts</h1>
 		<ul class="posts">
 		{% for post in site.posts %}
 			<li>
-				<a href="{{ post.url }}"><span>{{ post.date | date_to_string }}</span> &raquo; {{ post.title }}</a>
-				{{ post.excerpt }}
+				<a href="{{ post.url }}">
+					<span class="post-date">
+						{{ post.date | date: "%B %-d %Y" }}
+					</span>
+					<h1>{{ post.title }}</h1>
+					<p>{{ post.excerpt }}</p>
+				</a>
 			</li>
 		{% endfor %}
 		</ul>
