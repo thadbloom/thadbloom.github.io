@@ -2,12 +2,23 @@
 
 body {
     background: white;
-    margin: 1em auto;
-    max-width: 80%;
 }
 
-p,
-.highlight {
+.wrap {
+    margin: 0 auto;
+    max-width: 1200px;
+    background: #eee;
+}
+
+.site-header .title {
+
+}
+
+.site-header nav {
+
+}
+
+p {
 	margin-bottom: 1em;
 }
 
