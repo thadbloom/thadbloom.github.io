@@ -45,16 +45,74 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*--------------------------------------------------------------------------
+
+  Clearfix
+
+  Usage: @include clearfix;
+
+--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------
+
+  Handy stuff
+
+  Usage: @include image-replace(WIDTHpx,HEIGHTpx);
+
+--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------
+	Vertical align anything!
+	http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+	Requires the height of parent element to be set fixed.
+--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------
+	REM to PX for Fonts
+	http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+	Usage: @include font-size(13);
+--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------
+
+  Width, Margin and Padding Mixins
+  - These calculate % using the famous RWD formula, target/context*100
+
+--------------------------------------------------------------------------*/
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.vh,
+.screen-reader-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  .vh.focusable:active, .vh.focusable:focus,
+  .screen-reader-text.focusable:active,
+  .screen-reader-text.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
 body {
-  background: white; }
+  background: white;
+  color: #444; }
+
+.section {
+  padding: 2em 0; }
 
 .wrap {
   margin: 0 auto;
-  max-width: 1200px;
-  background: #eee; }
+  max-width: 1400px;
+  padding: 0 2em; }
 
-p {
+h1, p {
   margin-bottom: 1em; }
 
-.social a {
-  text-decoration: none; }
+a {
+  text-decoration: none;
+  color: #10b483; }

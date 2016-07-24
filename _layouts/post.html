@@ -1,19 +1,26 @@
 ---
 layout: default
 ---
-<header class="post header">
-	<div class="wrap">
-		<h2>{{ page.title }}</h2>
-		<p class="meta">{{ page.date | date_to_string }}</p>
-	</div>
-</header>
 
-<section class="post">
-	<div class="wrap">
-		{{ content }}
-	</div>
-</section>
+<article>
+	<header class="post header section">
+		<div class="wrap">
+			<h2>{{ page.title }}</h2>
+			<p class="meta">{{ page.date | date_to_string }}</p>
+		</div>
+	</header>
 
-{% include social-share.html %}
+	<section class="post section">
+		<div class="wrap">
+			{{ content }}
+		</div>
+	</section>
 
-{% include disqus.html %}
+	<section class="sharing section">
+		<div class="wrap">
+			{% include social-share.html %}
+		</div>
+	</section>
+
+	{% include disqus.html %}
+</article>

@@ -1,27 +1,28 @@
 @import "reset";
+@import "mixins";
+@import "helpers";
 
 body {
     background: white;
+    color: #444;
+}
+
+.section {
+    padding: 2em 0;
 }
 
 .wrap {
     margin: 0 auto;
-    max-width: 1200px;
-    background: #eee;
+    max-width: 1400px;
+    padding: 0 2em;
+    //background: #eee;
 }
 
-.site-header .title {
-
-}
-
-.site-header nav {
-
-}
-
-p {
+h1,p {
 	margin-bottom: 1em;
 }
 
-.social a {
+a {
     text-decoration: none;
+    color: darken(#3CEEB9,20%);
 }
