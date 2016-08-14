@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 			"menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
 		);
 	}
-	
+
 	$(".js-social-share").on("click", function(e) {
 		e.preventDefault();
 		windowPopup($(this).attr("href"), 500, 300);

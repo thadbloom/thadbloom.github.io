@@ -2,6 +2,9 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
+var jshint      = require('gulp-jshint');
+var	uglify      = require('gulp-uglify');
+var	concat      = require('gulp-concat');
 var cp          = require('child_process');
 var deploy      = require("gulp-gh-pages");
 
@@ -52,12 +55,21 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
+gulp.task('js', function () {
+   return gulp.src(['js/*.js'])
+      .pipe(uglify())
+      .pipe(concat('site.min.js'))
+      .pipe(gulp.dest('js/build'))
+      .pipe(browserSync.reload({stream:true}));
+});
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
+    gulp.watch('js/*.js', ['js']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*html'], ['jekyll-rebuild']);
 });
 
