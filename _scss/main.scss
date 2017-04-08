@@ -1,28 +1,35 @@
-@import "reset";
-@import "mixins";
-@import "helpers";
+//@import "reset";
+// @import "mixins";
+// @import "helpers";
 
 body {
+    text-align: center;
+    padding: 5em 0;
     background: white;
     color: #444;
+    font-family: sans-serif;
 }
 
-.section {
-    padding: 2em 0;
-}
+// .section {
+//     padding: 2em 0;
+// }
 
-.wrap {
-    margin: 0 auto;
-    max-width: 1400px;
-    padding: 0 2em;
-    //background: #eee;
-}
+// .wrap {
+//     margin: 0 auto;
+//     max-width: 800px;
+//     //padding: 0 2em;
+//     //background: #eee;
+// }
+//
+// p {
+//     line-height: 140%;
+// }
 
-h1,h2,p {
-	margin-bottom: 1em;
-}
+// h1,h2,p {
+// 	margin-bottom: 1em;
+// }
 
-a {
-    text-decoration: none;
-    color: darken(#3CEEB9,20%);
-}
+// a {
+//     text-decoration: none;
+//     color: darken(#3CEEB9,20%);
+// }
