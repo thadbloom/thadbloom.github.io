@@ -9,42 +9,8 @@ title: Pittsburgh Web Developer | Thad Bloom
 		<h2>About Me</h2>
 
 		<p>I am currently the senior developer at <a href="http://imagebox.com" target="_blank" rel="nofollow">Imagebox</a>.</p>
-		<p>I focus on front-end development and specialize in HTML/CSS, <a href="http://sass-lang.com" target="_blank" rel="nofollow">Sass</a>, <a href="http://wordpress.org" target="_blank" rel="nofollow">WordPress</a> &amp; <a href="http://jquery.com" target="_blank" rel="nofollow">jQuery</a>.</p>
 		<p>I strive to compose clean, semantic &amp; maintainable code. My absolute favorite thing to do is take a website mockup and turn it into a real/functioning/user-friendly website.</p>
 		<p>Outside of programming — I enjoy retro video games, good movies/tv shows, being a music geek and spending time with my awesome girlfriend.</p>
 
 	</div>
 </section>
-
-<section class="section posts">
-	<div class="wrap">
-		<h2>Dev Log</h2>
-	</div>
-	<ul>
-	{% for post in site.posts %}
-		<li>
-			<article class="index-post">
-				<div class="wrap">
-
-					<header class="post-header">
-						<span class="post-date">
-							{{ post.date | date: "%B %-d %Y" }}
-						</span>
-
-						<h2>
-							<a href="{{ post.url }}">
-								{{ post.title }}
-							</a>
-						</h2>
-					</header>
-
-					<article class="post-excerpt">
-						{{ post.excerpt }}
-					</article>
-
-				</div><!-- .wrap -->
-			</article><!-- .index-post -->
-		</li>
-	{% endfor %}
-	</ul>
-</section><!-- .posts -->
