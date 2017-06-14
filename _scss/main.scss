@@ -1,4 +1,28 @@
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900');
+
 body {
     text-align: center;
-    padding: 5em;
+    color: #333;
+    background: #eee;
+}
+
+img {
+    display: block;
+    margin: 0.75em auto;
+}
+
+.site-header,
+.site-footer {
+    margin: 5em 0;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 900;
 }
