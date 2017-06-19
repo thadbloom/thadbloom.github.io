@@ -414,11 +414,15 @@ h1 {
   font-weight: 700;
   font-size: 30px;
   font-size: 3rem;
-  margin: 0 0 0.25em; }
+  margin: 0; }
   @media screen and (min-width: 38em) {
     h1 {
       font-size: 50px;
       font-size: 5rem; } }
+  @media screen and (min-width: 60em) {
+    h1 {
+      font-size: 70px;
+      font-size: 7rem; } }
 
 img {
   max-width: 100%;
