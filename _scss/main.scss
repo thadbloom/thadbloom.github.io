@@ -1,34 +1,33 @@
+/* Custom
+   ========================================================================== */
+
 @import "normalize";
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:700');
+
+html, body {
+    height: 100%;
+}
 
 body {
     text-align: center;
-    color: #333;
-    background: #eee;
+    color: #e1e1e1;
+    background: #111;
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
 }
 
-img {
-    display: block;
-    margin: 0.75em auto;
+.content {
+    display: inline-block;
 }
-
-.site-header,
-.site-footer {
-    margin: 5em 0;
-}
-
-.wrap {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-weight: 900;
-}
-
 
 h1 {
+    font-family: 'Ubuntu Mono', monospace;
+    text-transform: uppercase;
+    font-weight: 700;
     font-size: 30px;
     font-size: 3rem;
     margin: 0 0 0.25em;
