@@ -1,6 +1,4 @@
-name: thad bloom
-description:
-url: http://thad.wtf
-highlighter: rouge # or rouge or null
+name: thad.wtf
+markdown: redcarpet
+highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
-permalink: pretty
