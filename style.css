@@ -1,8 +1,16 @@
 body {
     margin: 0; padding: 0;
-    background: #1D1F21;
+    background: #1D1F21 url(travolta.gif) bottom right no-repeat;
+    background-size: 200px 194px;
     color: #B5BD68;
     font-family: 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New';
+}
+
+@media screen and (min-width: 60em) {
+    body {
+        background: #1D1F21 url(travolta.gif) bottom right no-repeat;
+        background-size: 490px 476px;
+    }
 }
 
 .container {
