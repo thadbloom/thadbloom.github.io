@@ -1,26 +1,31 @@
 body {
     margin: 0; padding: 0;
-    background: #1D1F21 url(travolta.gif) bottom right no-repeat;
-    background-size: 200px 194px;
+    background: #1D1F21 url(Website-Under-Construction.gif) center center no-repeat;
+    background-size: cover;
+
     color: #B5BD68;
     font-family: 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New';
-}
-
-@media screen and (min-width: 60em) {
-    body {
-        background: #1D1F21 url(travolta.gif) bottom right no-repeat;
-        background-size: 490px 476px;
-    }
 }
 
 .container {
     height: 100vh;
     display: flex;
     align-items: center;
+    background: url(travolta.gif) bottom left no-repeat;
+    background-size: 200px 194px;
+}
+
+@media screen and (min-width: 60em) {
+    .container {
+        background: url(travolta.gif) bottom left no-repeat;
+        background-size: 490px 476px;
+    }
 }
 
 h1 {
+    padding: 1em;
     margin: 0 auto 0.25em;
+    background: rgba(0,0,0,0.7);
     font-size: 3em;
 }
 
